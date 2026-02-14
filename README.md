@@ -5,17 +5,18 @@
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
+pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
 ## Run
 
 ```bash
-fastapi dev
+fastapi dev app/main.py
 ```
 
 ## Endpoints
 
-- `GET /` basic welcome response
-- `GET /health` health check
-- `GET /docs` Swagger UI
+- `GET /` returns a welcome message
+- `GET /health` returns service status
+- `GET /docs` opens the Swagger UI
