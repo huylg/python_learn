@@ -1,4 +1,4 @@
-SHELL := /bin/fish
+SHELL := /bin/bash
 
 PYTHON := python3
 VENV := .venv
